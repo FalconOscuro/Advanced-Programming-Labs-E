@@ -1,10 +1,16 @@
 #include <iostream>
 using namespace std;
 
-void myswap(int lhs, int rhs) {
+void myswap(int& lhs, int& rhs) {
 	int temp = lhs;
 	lhs = rhs;
 	rhs = temp;
+}
+
+void myswapptr(int* lhs, int* rhs) {
+    int temp = *lhs;
+    *lhs = *rhs;
+    *rhs = temp;
 }
 
 int clamp(int value, int low, int high) {
