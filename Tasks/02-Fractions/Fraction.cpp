@@ -6,7 +6,7 @@ Fraction::Fraction():
 
 Fraction::Fraction(int num, int den)
 {
-    if (num < 0 ^ den < 0)
+    if ((num < 0) ^ (den < 0))
         m_Neg = true;
     
     else
@@ -96,7 +96,7 @@ bool Fraction::operator==(const Fraction& f) const
 
 bool Fraction::operator!=(const Fraction& f) const
 {
-    return m_Neg != f.m_Neg || m_Num != f.m_Num && m_Den == f.m_Den;
+    return (m_Neg != f.m_Neg) || (m_Num != f.m_Num && m_Den == f.m_Den);
 }
 
 Fraction Fraction::operator+(const Fraction& f) const
