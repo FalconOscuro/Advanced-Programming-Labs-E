@@ -1,0 +1,18 @@
+\section{Operators}
+
+    \subsection*{Question}
+        Extend your code from Lab D tasks 2 and 3 to include:
+        \begin{itemize}
+            \item The ability to write the \mintinline{cpp}{Grid} to an \mintinline{cpp}{ostream} using the auxiliary \mintinline{cpp}{operator<<}.
+            \item The ability to read in the values from an \mintinline{cpp}{istream} into the \mintinline{cpp}{Grid} using the auxiliary \mintinline{cpp}{operator>>}.
+        \end{itemize}
+    
+    \subsection*{Reflection}
+        I had already created an overload for the write-out operator for the previous task,
+        and the read-in operator just needed to iterate through and read in each element in the grid.
+
+
+    \subsection*{Solution}
+        \begin{listing}[H]
+            \inputminted[firstline=62]{cpp}{../Tasks/01-Operators/Grid.cpp}
+        \end{listing}
