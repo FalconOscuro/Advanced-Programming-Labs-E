@@ -1,0 +1,56 @@
+\section{Fractions and Operators}
+    \subsection*{Question}
+        Implement a fraction class with the following methods:
+        \begin{itemize}
+            \item Constructors
+            \item Add Fraction
+            \item Subtract Fraction
+            \item Multiply by int
+            \item Multiply with Fraction (optional)
+            \item Divide by int (optional)
+            \item Divide by Fraction (optional)
+            \item Inspector (getter) for the Numerator
+            \item Inspector (getter) for the Denominator
+            \item Mutator (setter) for the Numerator
+            \item Mutator (setter) for the Denominator
+            \item Write
+            \item Read
+        \end{itemize}
+
+    \subsection*{Reflection}
+        On top of the required I also:
+        \begin{itemize}
+            \item Operators for the mathematical functions. 
+                The only difference between this and the suggested method is 
+                the function definition and how it is called.
+            \item Unsigned integers. Having both numerator and nominator signed
+                is redundant so instead I created a separate boolean sign member.
+            \item A simplification function, capabale of converting any fraction to
+                its simplest form.
+        \end{itemize}
+    
+    \subsection*{Solution}
+        \begin{listing}[H]
+            \inputminted{cpp}{../Tasks/02-Fractions/Fraction.h}
+            \caption{Fraction Header}
+        \end{listing}
+
+        \begin{listing}[H]
+            \inputminted[firstline=3, lastline=21]{cpp}{../Tasks/02-Fractions/Fraction.cpp}
+            \caption{Constructors}
+        \end{listing}
+
+        \begin{listing}[H]
+            \inputminted[firstline=23, lastline=70]{cpp}{../Tasks/02-Fractions/Fraction.cpp}
+            \caption{Getters and Setters}
+        \end{listing}
+
+        \begin{listing}[H]
+            \inputminted[firstline=72, lastline=131]{cpp}{../Tasks/02-Fractions/Fraction.cpp}
+            \caption{Mathematical}
+        \end{listing}
+
+        \begin{listing}[H]
+            \inputminted[firstline=133]{cpp}{../Tasks/02-Fractions/Fraction.cpp}
+            \caption{Utility}
+        \end{listing}
